@@ -251,3 +251,68 @@ var areaChart = new ApexCharts(
   areaChartOptions
 );
 areaChart.render();
+
+
+
+// Additional JavaScript for Sales Dashboard
+
+// Placeholder data for total sales
+const totalSalesAmount = 120000;
+
+// Function to format currency amount
+function formatCurrency(amount) {
+  return new Intl.NumberFormat('en-US', {
+    style: 'currency',
+    currency: 'USD',
+  }).format(amount);
+}
+
+// Update Total Sales card with placeholder data
+const totalSalesAmountElement = document.getElementById('total-sales-amount');
+totalSalesAmountElement.textContent = formatCurrency(totalSalesAmount);
+
+// Placeholder data for recent orders
+const recentOrders = [
+  { id: 1, customer: 'John Doe', amount: 250 },
+  { id: 2, customer: 'Jane Smith', amount: 150 },
+  { id: 3, customer: 'Mike Johnson', amount: 300 },
+  { id: 4, customer: 'Emily Brown', amount: 180 },
+];
+
+// Function to render recent orders
+function renderRecentOrders(orders) {
+  const recentOrdersList = document.getElementById('recent-orders-list');
+  recentOrdersList.innerHTML = '';
+  orders.forEach((order) => {
+    const li = document.createElement('li');
+    li.textContent = `${order.customer} - ${formatCurrency(order.amount)}`;
+    recentOrdersList.appendChild(li);
+  });
+}
+
+// Update Recent Orders section with placeholder data
+renderRecentOrders(recentOrders);
+
+// Placeholder data for top customers
+const topCustomers = [
+  { name: 'Black_Hat', totalPurchases: 2500 },
+  { name: 'Jane Smith', totalPurchases: 1800 },
+  { name: 'MR Talal', totalPurchases: 3200 },
+  { name: 'John', totalPurchases: 2900 },
+];
+
+// Function to render top customers
+function renderTopCustomers(customers) {
+  const topCustomersList = document.getElementById('top-customers-list');
+  topCustomersList.innerHTML = '';
+  customers.forEach((customer) => {
+    const li = document.createElement('li');
+    li.textContent = `${customer.name} - ${formatCurrency(
+      customer.totalPurchases
+    )}`;
+    topCustomersList.appendChild(li);
+  });
+}
+
+// Update Top Customers section with placeholder data
+renderTopCustomers(topCustomers);

@@ -225,3 +225,139 @@ body {
     display: none;
   }
 }
+
+
+ /* Add Additional Styling  */
+ /* Sidebar Styling */
+#sidebar {
+  background-color: #1a1f2b;
+}
+
+.sidebar-list-item {
+  font-size: 20px;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar-list-item:hover {
+  background-color: #263043;
+  cursor: pointer;
+}
+
+/* Header Styling */
+.header {
+  background-color: #1a1f2b;
+  padding: 10px 30px;
+}
+
+.header-right .material-icons-outlined {
+  color: #e2e2e2;
+  font-size: 24px;
+  margin-left: 10px;
+}
+
+/* Main Cards Styling */
+.card {
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background-color: #2c3442;
+  color: #ffffff;
+  border-radius: 8px;
+  transition: transform 0.2s ease;
+}
+
+.card-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Slightly increase shadow on hover */
+}
+
+/* Charts Styling */
+.charts-card {
+  background-color: #1a1f2b;
+  font-size: 18px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.chart-title {
+  color: #e2e2e2;
+}
+
+/* Hover effect for header icons */
+.header-right .material-icons-outlined:hover {
+  color: #ffffff;
+  transform: rotate(20deg);
+}
+
+/* Hover effect for sidebar close icon */
+.sidebar-title > span:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+/* Hover effect for recent orders and top customers */
+.recent-orders h2:hover,
+.top-customers h2:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* Animated loading spinner for charts */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loading-spinner {
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-top: 3px solid #ffffff;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 1s linear infinite;
+  margin: 0 auto;
+}
+
+/* Hover effect for cards inside main-cards */
+.main-cards .card:hover {
+  background-color: #3a4355; /* Darken the background color on hover */
+}
+
+/* Add a subtle box-shadow to the main title */
+.main-title {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+/* Add a subtle border to the recent-orders and top-customers sections */
+.recent-orders,
+.top-customers {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 10px;
+}
+
+/* Add a transition effect to the header title */
+.main-title h2 {
+  transition: color 0.3s ease;
+}
+
+.main-title:hover h2 {
+  color: #ffffff; /* Change title color on hover */
+}
+
+
