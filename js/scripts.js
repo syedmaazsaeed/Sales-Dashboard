@@ -81,7 +81,7 @@ var barChartOptions = {
     theme: 'dark',
   },
   xaxis: {
-    categories: ['Laptop', 'Phone', 'Monitor', 'Headphones', 'Camera'],
+    categories: ['Laptop', 'Phone', 'LED', 'Headphones', 'DSLR'],
     title: {
       style: {
         color: '#f5f7ff',
