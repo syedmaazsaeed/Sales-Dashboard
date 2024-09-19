@@ -3,16 +3,8 @@
 Sales Dashboard is a web application that provides an interactive dashboard to visualize sales data and monitor key metrics. It allows users to view product information, track sales, manage inventory, and generate reports.
 
 
-## Table of Contents
-- [Features](#features)
-- [Demo](#demo)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Technologies Used](#technologies-used)
-- [Contributing](#contributing)
-- [License](#license)
-
 ## Features
+
 - Dashboard Overview: Get a summary of important indicators, such as the total number of items, categories, clients, and alerts.
 
 - Total Sales: View the total amount of sales with dynamic data in a currency format.
@@ -25,9 +17,6 @@ Sales Dashboard is a web application that provides an interactive dashboard to v
 
 - Interactive Charts: Use interactive charts, such as bar charts and area charts, to visualise sales data.
 
-## Demo
-
-A live demo of the Sales Dashboard can be accessed at [https://your-demo-url.com](https://your-demo-url.com).
 
 ## Installation
 
@@ -36,6 +25,7 @@ Follow these instructions to run the Sales Dashboard locally:
 1. Clone the repository by typing "git clone https://github.com/syedmaazsaeed/sales-dashboard.git" into the address bar.
 2. Go to the 'cd sales-dashboard' project directory.
 3. Launch your web browser and navigate to the index.html file.
+   
 ## Usage
 
 - The Sales Dashboard provides an intuitive user interface. Use the sidebar to navigate between different sections, such as Dashboard, Products, Categories, Customers, Inventory, and Reports.
@@ -51,9 +41,9 @@ Follow these instructions to run the Sales Dashboard locally:
 The Sales Dashboard project uses the following technologies:
 
 - HTML
-- CSS (Cascading Style Sheets)
+- CSS
 - JavaScript
-- ApexCharts (for interactive charts)
+- ApexCharts
 
 ## Contributing
 
